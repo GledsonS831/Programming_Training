@@ -6,7 +6,7 @@ bool *primos = (bool*)malloc(sizeof(bool)*2000000);
 int *qnt_div = (int*)malloc(sizeof(int)*2000000);
 int *resp = (int*)malloc(sizeof(int)*2000000);
 
-int crivoErastotenes_divisores(){
+int divisores(){
 
    for(int i = 2; i <= 2000000; i++){
        if(primos[i]){
@@ -46,7 +46,7 @@ int main(){
     memset(primos, true, 2000000);
     memset(qnt_div, 0, 2000000);
     memset(resp, 0, 2000000);
-    crivoErastotenes_divisores();
+    divisores();
     Resp();
     while(cin>>n){
         cout<<resp[n]<<endl;
