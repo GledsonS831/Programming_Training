@@ -1,15 +1,9 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-typedef struct{
-  string id;
-  int valor;
-}Argus;
-
 int main() {
   string reg;
   int v, k, id;
-  Argus argus[100000];
   map<int, int > mp;
   priority_queue<pair<int, int> > pq;
   int tam_pq = 0;
